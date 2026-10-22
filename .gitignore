@@ -1,5 +1,4 @@
 .next
-.next-concept
 node_modules
 .vercel
 tsconfig.tsbuildinfo
