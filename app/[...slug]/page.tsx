@@ -1,5 +1,4 @@
-import { notFound } from "next/navigation";
-import { SiteFrame } from "../site-frame";
+import { notFound, redirect } from "next/navigation";
 
 const staticPages = new Set([
   "about",
@@ -17,5 +16,5 @@ export default async function StaticWordPressPage({
 
   if (!staticPages.has(pagePath)) notFound();
 
-  return <SiteFrame src={`/${pagePath}/index.html`} />;
+  redirect(`/${pagePath}/index.html`);
 }

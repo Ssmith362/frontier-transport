@@ -1,5 +1,5 @@
-import { SiteFrame } from "../site-frame";
+import { redirect } from "next/navigation";
 
 export default function JoinOurTeam() {
-  return <SiteFrame src="/join-our-team/index.html" />;
+  redirect("/join-our-team/index.html");
 }
