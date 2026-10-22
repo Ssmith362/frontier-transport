@@ -2,17 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ftacquisition.com/"),
-  title: "West Coast Freight & Poultry Hauling | Frontier Transport",
-  description: "West Coast freight transportation and poultry hauling, with dry and cold storage in Pasco, Washington. Serving Washington, California, and Arizona.",
-  openGraph: {
-    title: "West Coast Freight & Poultry Hauling | Frontier Transport",
-    description: "Dependable West Coast transportation, poultry hauling, and dry and cold storage in the Tri-Cities.",
-    url: "https://ftacquisition.com/",
-    siteName: "Frontier Transport",
-    images: [{ url: "/images/truck-hero.webp", alt: "Frontier Transport truck on a West Coast freight route" }],
-    type: "website",
-  },
+  title: "Frontier Transport | Keeping the West Coast Moving",
+  description: "Reliable West Coast transportation and storage. Poultry and freight hauling, dry and cold storage in Pasco, Washington, and dependable backhaul service.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

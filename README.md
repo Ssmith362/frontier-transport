@@ -1,6 +1,6 @@
-# Frontier Transport homepage concept
+# Frontier Transport website
 
-A responsive Next.js App Router homepage concept for Frontier Transport, built from the company’s published branding, services, locations, and contact details.
+Next.js App Router reproduction of the public Frontier Transport homepage and the visible Join our team form at ftacquisition.com.
 
 ## Run locally
 
@@ -9,22 +9,8 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:3000` to view the homepage.
+The image paths currently point to the source site's WordPress staging media host. Copy the original image assets into `public/` and replace those URLs before production so the migrated site does not depend on the WordPress host. The public `transport-with-us` page was parked when inspected, so its old form has not been recreated. The Join our team form is a visual recreation only and needs a submission destination before it can accept applications.
 
-## Included
+## Deploy
 
-- Responsive homepage with freight, poultry hauling, storage, return backhaul, operating process, company, quote, and driver sections.
-- Local image assets from the Frontier Transport website, including descriptive alt text.
-- Dedicated `/transport-with-us/`, `/storage/`, and `/join-our-team/` pages for internal service and recruitment links.
-- Page metadata, Open Graph details, and TransportationService structured data using verified public business details.
-- Phone links for quote and driver inquiries. Contact forms and online quote submission are not connected in this concept.
-
-## Build
-
-```sh
-npm run build
-```
-
-## Content source
-
-Business details and the logo are based on [ftacquisition.com](https://ftacquisition.com/). The concept preserves the published phone number, Burbank address, West Coast service area, Pasco storage location, and Facebook page.
+Import this project directory as its own Git repository in Vercel. Vercel detects Next.js and uses its standard build settings.
